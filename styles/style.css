@@ -1,8 +1,222 @@
 * {
+  margin: 0;
   font-family: "Lobster", cursive;
   font-family: "Work Sans", sans-serif;
 }
 body {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+
+/* buttons */
+.primary-btn {
+  background: #ff900e;
+  padding: 20px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+/*___________header start______________ */
+.header {
+  width: 100%;
+  background: rgba(255, 144, 14, 0.1);
+}
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+.navbar-items {
+  display: flex;
+  gap: 75px;
+  padding: 0;
+}
+.navbar-items li {
+  list-style: none;
+}
+.navbar-items a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #424242;
+}
+
+.header-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-title-description {
+  max-width: 860px;
+}
+.header-title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #131313;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.header-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.banner img {
+  margin-top: 50px;
+}
+/* ______________header end______________ */
+
+/* __________________Main Start____________ */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 85px 50px 220px 50px;
+}
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+.section-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-top: 24px;
+  margin-bottom: 34px;
+}
+/* Features section */
+.photo-gallery {
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+.features-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+.quick-list {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: #727272;
+}
+.features {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #ff900e;
+}
+/* Love and Enjoy Section */
+
+/* Some Facts */
+.some-facts-section .section-title {
+  margin-top: 130px;
+  margin-bottom: 0;
+}
+.some-facts-section .section-description {
+  margin-bottom: 100px;
+}
+.some-facts-cards {
+  display: flex;
+  justify-content: space-around;
+}
+.some-facts-card {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 45px 36px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.some-facts-card img {
+  height: auto;
+  width: auto;
+}
+.sm-card-title {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+  color: #424242;
+}
+.sm-card-description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #727272;
+}
+/* sponsors section */
+.sponsor-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+.sponsor-section .section-description {
+  max-width: 540px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+.sponsors-list {
+  display: flex;
+  gap: 160px;
+}
+.sponsor-logo img {
+  filter: grayscale(100%);
+}
+/* __________________Main End_____________ */
+/* footer */
+footer {
+  max-width: 1440px;
+  margin: 0 auto 220px;
+  background: #fff4e7;
+  border-radius: 8px;
+  padding: 40px;
+}
+footer .footer-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #424242;
 }
