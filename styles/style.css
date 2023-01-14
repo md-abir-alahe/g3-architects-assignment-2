@@ -1,0 +1,8 @@
+* {
+  font-family: "Lobster", cursive;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
