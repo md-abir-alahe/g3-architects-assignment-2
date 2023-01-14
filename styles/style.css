@@ -23,6 +23,22 @@ img {
   color: #ffffff;
   border: none;
 }
+.experience-btn {
+  background: #ff900e;
+  padding: 46px 42px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+.experience-btn span {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+}
 
 /*___________header start______________ */
 .header {
@@ -117,18 +133,19 @@ main {
   margin-bottom: 34px;
 }
 /* Features section */
+.features-section {
+  max-width: 1320px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
 .photo-gallery {
   border-radius: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 24px;
-}
-.features-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 70px;
-  align-items: center;
 }
 .quick-list {
   font-weight: 500;
@@ -144,6 +161,55 @@ main {
   color: #ff900e;
 }
 /* Love and Enjoy Section */
+.love-enjoy-section .container {
+    margin-top: 130px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.love-enjoy-section .left-ctn {
+  display: flex;
+  flex-direction: column;
+}
+.love-enjoy-section .section-title-ctn {
+  border: 5px solid #ff900e;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 20px;
+}
+.love-enjoy-section .le-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.love-enjoy-section .card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #131313;
+}
+.love-enjoy-section .card-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+.right-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.experience-btn {  
+    margin-top: -130px;
+    margin-left: -70px;
+}
 
 /* Some Facts */
 .some-facts-section .section-title {
