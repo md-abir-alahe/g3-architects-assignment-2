@@ -22,6 +22,7 @@ img {
   text-align: center;
   color: #ffffff;
   border: none;
+  cursor: pointer;
   transition: background 0.7s, color 0.7s;
   
 }
@@ -41,6 +42,7 @@ img {
   text-align: center;
   color: #ffffff;
   border: none;
+  cursor: pointer;
   transition: background 0.7s, color 0.7s;
 }
 .experience-btn:hover {
@@ -128,7 +130,7 @@ img {
   margin-top: 50px;
 }
 /* ______________header end______________ */
-
+/* md-abir-alahe */
 /* __________________Main Start____________ */
 main {
   max-width: 1440px;
@@ -212,6 +214,7 @@ main {
   font-size: 20px;
   line-height: 23px;
   color: #131313;
+  margin-bottom: 10px;
 }
 .love-enjoy-section .card-description {
   font-weight: 400;
@@ -240,8 +243,11 @@ main {
   margin-bottom: 100px;
 }
 .some-facts-cards {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .some-facts-card {
   border: 1px solid #ff900e;
@@ -273,6 +279,7 @@ main {
   color: #424242;
   margin-top: 10px;
   margin-bottom: 5px;
+  cursor: default;
 }
 .sm-card-description {
   font-style: normal;
@@ -280,6 +287,8 @@ main {
   font-size: 20px;
   line-height: 23px;
   color: #727272;
+  text-align: center;
+  cursor: default;
 }
 .some-facts-card:hover>h2, .some-facts-card:hover>h4 {
   color: #ffffff;
@@ -298,7 +307,7 @@ main {
 .contact-section-container {
     max-width: 40%;
 }
-.section-title {
+.contact-section .section-title {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 26px;
@@ -342,6 +351,11 @@ main {
 /* footer */
 footer {
   max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer-ctn {
   margin: 0 auto 220px;
   background: #fff4e7;
   border-radius: 8px;
@@ -360,6 +374,7 @@ footer .footer-text {
   display: none;
 }
 
+/* md-abir-alahe */
 @media screen and (max-width:576px ) {
   /* header */
   .header-container {
@@ -393,6 +408,9 @@ footer .footer-text {
     justify-content: center;
     align-items: center;
   }
+  .feature-section-items .section-title, .feature-section-items .section-description {
+    text-align: center;
+  }
   /* love and enjoy section */
   .love-enjoy-section .container {
     grid-template-columns: 1fr;
@@ -408,7 +426,7 @@ footer .footer-text {
   }
   /* some facts */
   .some-facts-cards {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
   /* contact us */
@@ -425,7 +443,80 @@ footer .footer-text {
   }
   /* footer */
   footer {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
+@media screen and (min-width:577px ) and (max-width:992px) {
+  /* header */
+  .header-container {
+    padding: 50px 15px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar-items {
+    flex-direction: column;
+    gap: 5px;
+  }
+  /* main sections */
+  main {
+    margin: 0 auto;
+    padding: 60px 15px 155px 15px;
+  }
+  /* features section */
+  .features-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .photo-gallery {
+    gap: 15px;
+  }
+  .feature-section-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-section-items .section-title, .feature-section-items .section-description {
+    text-align: center;
+  }
+  /* love and enjoy section */
+  .love-enjoy-section .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .right-ctn {
+    align-items: center;
+  }
+  .experience-btn {
+    margin: 15px 0 0 0;
+    padding: 32px 30px;
+  }
+  /* some facts */
+  .some-facts-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  /* contact us */
+  .contact-section .section-title{
+    font-size: 30px;
+  }
+  .contact-section-container {
+    width: 100%;
+  }
+  /* sponsors */
+  .sponsors-list {
+    gap: 20px;
+    flex-direction: column;
+  }
+  /* footer */
+  footer {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+/* md-abir-alahe */
