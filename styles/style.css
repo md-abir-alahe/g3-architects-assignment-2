@@ -79,6 +79,7 @@ img {
 .navbar-items {
   display: flex;
   gap: 75px;
+  align-items: center;
   padding: 0;
 }
 .navbar-items li {
@@ -288,6 +289,7 @@ main {
     background-color: rgba(255, 144, 14, 0.1);
     border-radius: 8px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 130px;
@@ -351,4 +353,79 @@ footer .footer-text {
   line-height: 23px;
   text-align: center;
   color: #424242;
+}
+
+/* responsive design */
+.hide {
+  display: none;
+}
+
+@media screen and (max-width:576px ) {
+  /* header */
+  .header-container {
+    padding: 50px 15px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar-items {
+    flex-direction: column;
+    gap: 5px;
+  }
+  /* main sections */
+  main {
+    margin: 0 auto;
+    padding: 60px 15px 155px 15px;
+  }
+  /* features section */
+  .features-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .feature-section-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* love and enjoy section */
+  .love-enjoy-section .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .right-ctn {
+    align-items: center;
+  }
+  .experience-btn {
+    margin: 15px 0 0 0;
+    padding: 32px 30px;
+  }
+  /* some facts */
+  .some-facts-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* contact us */
+  .contact-section .section-title{
+    font-size: 30px;
+  }
+  .contact-section-container {
+    width: 100%;
+  }
+  /* sponsors */
+  .sponsors-list {
+    gap: 20px;
+    flex-direction: column;
+  }
+  /* footer */
+  footer {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
